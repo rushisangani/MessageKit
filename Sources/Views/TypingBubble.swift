@@ -105,7 +105,7 @@ open class TypingBubble: UIView {
         // To maintain the iMessage like bubble the width:height ratio of the frame
         // must be close to 1.65
         
-        guard bounds.width > 0 else { return} // add this in order to prevent NaN crashes
+        guard bounds.width > 0 else { return } // add this in order to prevent NaN crashes
         
         let ratio = bounds.width / bounds.height
         let extraRightInset = bounds.width - 1.65/ratio*bounds.width
